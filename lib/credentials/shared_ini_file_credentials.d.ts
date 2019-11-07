@@ -13,5 +13,6 @@ interface SharedIniFileCredentialsOptions {
     disableAssumeRole?: boolean
     tokenCodeFn?: (mfaSerial: string, callback: (err?: Error, token?: string) => void) => void
     httpOptions?: HTTPOptions
+    roleSessionName?: string
     callback?: (err?: Error) => void
 }
